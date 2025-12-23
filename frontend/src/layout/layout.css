@@ -1,0 +1,164 @@
+.app-shell {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  height: 100vh;
+  background: radial-gradient(circle at top left, #202938, #080b12);
+  color: #f5f5f5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px;
+  background: linear-gradient(180deg, #050816, #05020a);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.sidebar-item-active {
+  background: linear-gradient(90deg, #1db954, #1ed760);
+  color: #041208;
+}
+
+.sidebar-item-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.sidebar-item-active .sidebar-item-icon {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-item-label {
+  font-size: 0.9rem;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(5, 5, 10, 0.9);
+  backdrop-filter: blur(16px);
+}
+
+.topbar-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.topbar-right {
+  display: flex;
+  gap: 8px;
+}
+
+.topbar-chip {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.submenu {
+  display: flex;
+  gap: 12px;
+  padding: 8px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: radial-gradient(circle at top, #141927, #05060a);
+}
+
+.submenu-item {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.8);
+  border: 1px solid transparent;
+}
+
+.submenu-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.submenu-item-active {
+  background: rgba(29, 185, 84, 0.15);
+  border-color: #1db954;
+  color: #eafff1;
+}
+
+.app-content {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 0.85rem;
+}
+
+.table th,
+.table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.table th {
+  text-align: left;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.table tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+
